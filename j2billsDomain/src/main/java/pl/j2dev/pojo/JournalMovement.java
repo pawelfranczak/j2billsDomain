@@ -16,5 +16,11 @@ public class JournalMovement {
 	public void setTarget(Journal target) {
 		this.target = target;
 	}
+	@Override
+	public String toString() {
+		return "JournalMovement [source=" + source + ", target=" + target + "]";
+	}
+	
+	
 	
 }
