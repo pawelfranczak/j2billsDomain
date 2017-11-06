@@ -9,7 +9,7 @@ public class Journal {
 
 	
 	
-	long id;
+	int id;
     int personId;
     int accountId;
     BigDecimal value;
@@ -22,22 +22,17 @@ public class Journal {
     Account account;
 
     @Override
-    public String toString() {
-        return "Journal{" +
-                "id=" + id +
-                ", person=" + person +
-                ", account=" + account +
-                ", value=" + value +
-                ", description='" + description + '\'' +
-                ", timestamp=" + timestamp +
-                '}';
-    }
+	public String toString() {
+		return "Journal [id=" + id + ", personId=" + personId + ", accountId=" + accountId + ", value=" + value
+				+ ", description=" + description + ", timestamp=" + timestamp + ", person=" + person + ", account="
+				+ account + "]";
+	}
 
-    public long getId() {
+	public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

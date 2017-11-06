@@ -2,7 +2,7 @@ package pl.j2dev.pojo;
 
 public class Person {
 
-	long id;
+	int id;
     String firstName;
     String lastName;
 
@@ -15,11 +15,11 @@ public class Person {
                 '}';
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
